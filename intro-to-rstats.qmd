@@ -1,25 +1,81 @@
 ---
-title: "R, Posit, Quarto, and Github for Teaching Mathematics in the K to 12"
-author: "Orville D. Hombrebueno"
+title: "R and Posit for Teaching Math in the K to 12"
+author: 
+  - name: Orville D. Hombrebueno
+    email: odhombrebueno@nvsu.edu.ph
+    affiliations: Nueva Vizcaya State University
 format: revealjs
 editor: visual
 ---
 
-## Quarto
+# What is R?
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+![](images/R1.png){fig-align="center"}
 
-## Bullets
+## Introduction to R
 
-When you click the **Render** button a document will be generated that includes:
+::: incremental
+-   [R](www.r-project.org) was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, and is currently developed by the R Development Core Team.
 
--   Content authored with markdown
--   Output from executable code
+-   R is a language and environment for statistical computing and graphics. It provides a wide variety of statistical and graphical techniques, and is highly extensible.
+:::
 
-## Code
+## Introduction to R
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+-   R provides an Open Source route to participation in research in statistical methodology.
 
-```{r}
-1 + 1
-```
+::: incremental
+-   One of R's strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed.
+:::
+
+## The R Environment
+
+R is an integrated suite of software facilities for data manipulation, calculation and graphical display. It includes
+
+::: incremental
+-   an effective data handling and storage facility,
+
+-   a suite of operators for calculations on arrays, in particular matrices,
+
+-   a large, coherent, integrated collection of intermediate tools for data analysis,
+:::
+
+## The R Environment
+
+R is an integrated suite of software facilities for data manipulation, calculation and graphical display. It includes
+
+-   graphical facilities for data analysis and display either on-screen or on hardcopy, and
+
+::: incremental
+-   a well-developed, simple and effective programming language which includes conditionals, loops, user-defined recursive functions and input and output facilities.
+:::
+
+## The R Environment
+
+-   The term "environment" is intended to characterize it as a fully planned and coherent system, rather than an incremental accretion of very specific and inflexible tools.
+
+::: incremental
+-   R, is designed around a true computer language, and it allows users to add additional functionality by defining new functions.
+:::
+
+## The R Environment
+
+-   Many users think of R as a statistics system. We prefer to think of it as an environment within which statistical techniques are implemented. R can be extended (easily) via packages. There are about eight packages supplied with the R distribution and many more are available through the CRAN family of Internet sites covering a very wide range of modern statistics. Currently, the CRAN package repository features 19,728 available packages.
+
+## 
+
+![](images/R.png){fig-align="center"}
+
+# What is Posit (RStudio)?
+
+::: columns
+::: {.column width="50%"}
+![](images/posit.png)
+:::
+
+::: {.column width="50%"}
+![](images/rstudio2.png)
+:::
+:::
+
+## 
