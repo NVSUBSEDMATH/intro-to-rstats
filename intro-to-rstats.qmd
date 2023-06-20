@@ -60,7 +60,7 @@ R is an integrated suite of software facilities for data manipulation, calculati
 
 ## The R Environment
 
--   Many users think of R as a statistics system. We prefer to think of it as an environment within which statistical techniques are implemented. R can be extended (easily) via packages. There are about eight packages supplied with the R distribution and many more are available through the CRAN family of Internet sites covering a very wide range of modern statistics. Currently, the CRAN package repository features 19,728 available packages.
+-   Many users think of R as a statistics system. We prefer to think of it as an environment within which statistical techniques are implemented. R can be extended (easily) via packages. There are about eight packages supplied with the R distribution and many more are available through the [CRAN](https://cran.r-project.org/) family of Internet sites covering a very wide range of modern statistics. Currently, the CRAN package repository features 19,728 available packages.
 
 ## 
 
