@@ -1,5 +1,5 @@
 ---
-title: "R and Posit for Teaching Math in the K to 12"
+title: "R and RStudio for Teaching Math in the K to 12"
 author: 
   - name: Orville D. Hombrebueno
     email: odhombrebueno@nvsu.edu.ph
@@ -66,7 +66,13 @@ R is an integrated suite of software facilities for data manipulation, calculati
 
 ![](images/R.png){fig-align="center"}
 
-# What is Posit (RStudio)?
+# What is RStudio (Posit)?
+
+## Introduction to RStudio
+
+[posit](https://posit.co/): The open source data science company.
+
+[RSTUDIO IDE](https://posit.co/products/open-source/rstudio/): The most trusted IDE for open source data science.
 
 ::: columns
 ::: {.column width="50%"}
@@ -78,4 +84,14 @@ R is an integrated suite of software facilities for data manipulation, calculati
 :::
 :::
 
-## Rstudi
+# What is R and RStudio?
+
+## 
+
+-   R is a statistical programming language.
+
+-   RStudio is a convenient interface for R (an integrated development environment, IDE).
+
+![](images/engine-dashboard.png){width="2000"}
+
+\*Source: [Modern Dive](https://moderndive.com/)
