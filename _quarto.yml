@@ -1,0 +1,16 @@
+project: 
+  type: website
+
+website: 
+  title: "Intro to RStats"
+  navbar:
+    left:
+      - text: Home
+        href: workshop.qmd
+      - text: Presentation
+        href: presentation.qmd
+      - href: about.qmd
+
+execute:
+  freeze: true
+  

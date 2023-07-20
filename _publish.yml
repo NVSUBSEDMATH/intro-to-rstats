@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 5396323e-c4bf-449d-a427-71b353de6ab3
+      url: 'https://mild-orville.quarto.pub/intro-to-rstats'

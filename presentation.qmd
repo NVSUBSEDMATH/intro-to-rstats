@@ -1,10 +1,14 @@
 ---
 title: "Penguins"
 author: "Orville Hombrebueno"
-format: html
+format: revealjs
 editor: visual
 bibliography: references.bib
+execute:
+  echo: true
 ---
+
+# Introduction
 
 ## Data
 
@@ -33,13 +37,22 @@ glimpse(penguins)
 #| fig-cap: Bar plot of species of penguins.
 #| fig-width: 5
 #| fig-asp: 0.618
-#| echo: fenced
+#| output-location: column-fragment
+#| code-line-numbers: "|6|7-10"
 
-ggplot(penguins, aes(x = species)) +
-  geom_bar()
+ggplot(
+  penguins,
+  aes(x = species)
+) +
+  geom_bar() +
+  theme_minimal() +
+  labs(
+    x = "Species",
+    y = "Count"
+  )
 ```
 
-## Penguins
+## Penguins {.smaller}
 
 @tbl-penguins shows the first 10 penguins from the dataset.
 
@@ -54,3 +67,11 @@ penguins |>
   gt() 
 
 ```
+
+# Analysis
+
+## Modeling Results
+
+...
+
+## References
