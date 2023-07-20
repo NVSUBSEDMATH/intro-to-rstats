@@ -75,11 +75,11 @@ R is an integrated suite of software facilities for data manipulation, calculati
 [RSTUDIO IDE](https://posit.co/products/open-source/rstudio/): The most trusted IDE for open source data science.
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](images/posit.png)
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](images/rstudio2.png)
 :::
 :::
