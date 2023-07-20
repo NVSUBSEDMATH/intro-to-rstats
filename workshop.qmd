@@ -1,0 +1,17 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+## Data
+
+Say **something** about [the]{.underline} *`dataset`* I'll use..
+
+```{r}
+#| label: load-packages
+
+library(tidyverse)
+library(palmer penguins)
+library(gt)
+```
