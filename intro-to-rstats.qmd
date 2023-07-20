@@ -1,5 +1,5 @@
 ---
-title: "R and RStudio for Teaching Math in the K to 12"
+title: "R and RStudio for Teaching Mathematics"
 author: 
   - name: Orville D. Hombrebueno
     email: odhombrebueno@nvsu.edu.ph
@@ -55,12 +55,12 @@ R is an integrated suite of software facilities for data manipulation, calculati
 -   The term "environment" is intended to characterize it as a fully planned and coherent system, rather than an incremental accretion of very specific and inflexible tools.
 
 ::: incremental
--   R, is designed around a true computer language, and it allows users to add additional functionality by defining new functions.
+-   R is designed around a true computer language, and it allows users to add additional functionality by defining new functions.
 :::
 
 ## The R Environment
 
--   Many users think of R as a statistics system. We prefer to think of it as an environment within which statistical techniques are implemented. R can be extended (easily) via packages. There are about eight packages supplied with the R distribution and many more are available through the [CRAN](https://cran.r-project.org/) family of Internet sites covering a very wide range of modern statistics. Currently, the CRAN package repository features 19,728 available packages.
+-   Many users think of R as a statistics system. R is more of an environment within which statistical techniques are implemented. R can be extended (easily) via packages. There are about eight packages supplied with the R distribution and many more are available through the [CRAN](https://cran.r-project.org/) family of Internet sites covering a very wide range of modern statistics. Currently, the CRAN package repository features 19,728 available packages.
 
 ## 
 
