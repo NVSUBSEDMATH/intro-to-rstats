@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "intro-to-rstats.html#introduction-to-r",
+    "href": "intro-to-rstats.html#introduction-to-r",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "Introduction to R",
+    "text": "Introduction to R\n\n\nR was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, and is currently developed by the R Development Core Team.\nR is a language and environment for statistical computing and graphics. It provides a wide variety of statistical and graphical techniques, and is highly extensible."
+  },
+  {
+    "objectID": "intro-to-rstats.html#introduction-to-r-1",
+    "href": "intro-to-rstats.html#introduction-to-r-1",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "Introduction to R",
+    "text": "Introduction to R\n\nR provides an Open Source route to participation in research in statistical methodology.\n\n\n\nOne of R’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed."
+  },
+  {
+    "objectID": "intro-to-rstats.html#the-r-environment",
+    "href": "intro-to-rstats.html#the-r-environment",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "The R Environment",
+    "text": "The R Environment\nR is an integrated suite of software facilities for data manipulation, calculation and graphical display. It includes\n\n\nan effective data handling and storage facility,\na suite of operators for calculations on arrays, in particular matrices,\na large, coherent, integrated collection of intermediate tools for data analysis,"
+  },
+  {
+    "objectID": "intro-to-rstats.html#the-r-environment-1",
+    "href": "intro-to-rstats.html#the-r-environment-1",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "The R Environment",
+    "text": "The R Environment\nR is an integrated suite of software facilities for data manipulation, calculation and graphical display. It includes\n\ngraphical facilities for data analysis and display either on-screen or on hardcopy, and\n\n\n\na well-developed, simple and effective programming language which includes conditionals, loops, user-defined recursive functions and input and output facilities."
+  },
+  {
+    "objectID": "intro-to-rstats.html#the-r-environment-2",
+    "href": "intro-to-rstats.html#the-r-environment-2",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "The R Environment",
+    "text": "The R Environment\n\nThe term “environment” is intended to characterize it as a fully planned and coherent system, rather than an incremental accretion of very specific and inflexible tools.\n\n\n\nR is designed around a true computer language, and it allows users to add additional functionality by defining new functions."
+  },
+  {
+    "objectID": "intro-to-rstats.html#the-r-environment-3",
+    "href": "intro-to-rstats.html#the-r-environment-3",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "The R Environment",
+    "text": "The R Environment\n\nMany users think of R as a statistics system. R is more of an environment within which statistical techniques are implemented. R can be extended (easily) via packages. There are about eight packages supplied with the R distribution and many more are available through the CRAN family of Internet sites covering a very wide range of modern statistics. Currently, the CRAN package repository features 19,728 available packages."
+  },
+  {
+    "objectID": "intro-to-rstats.html#introduction-to-rstudio",
+    "href": "intro-to-rstats.html#introduction-to-rstudio",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "Introduction to RStudio",
+    "text": "Introduction to RStudio\nposit: The open source data science company.\nRSTUDIO IDE: The most trusted IDE for open source data science."
+  },
+  {
+    "objectID": "intro-to-rstats.html#section-1",
+    "href": "intro-to-rstats.html#section-1",
+    "title": "R and RStudio for Teaching Mathematics",
+    "section": "",
+    "text": "R is a statistical programming language.\nRStudio is a convenient interface for R (an integrated development environment, IDE).\n\n\n*Source: Modern Dive"
+  },
+  {
+    "objectID": "presentation.html#data",
+    "href": "presentation.html#data",
+    "title": "Penguins",
+    "section": "Data",
+    "text": "Data\nFor this analysis we’ll use the penguins dataset from the palmerpenguins package(Gorman, Williams, and Fraser 2014).\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(gt)\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
+  },
+  {
+    "objectID": "presentation.html#species",
+    "href": "presentation.html#species",
+    "title": "Penguins",
+    "section": "Species",
+    "text": "Species\nFigure 1 is a bar plot of species of penguins.\n\n\nggplot(\n  penguins,\n  aes(x = species)\n) +\n  geom_bar() +\n  theme_minimal() +\n  labs(\n    x = \"Species\",\n    y = \"Count\"\n  )\n\n\n\n\n\nFigure 1: Bar plot of species of penguins."
+  },
+  {
+    "objectID": "presentation.html#penguins",
+    "href": "presentation.html#penguins",
+    "title": "Penguins",
+    "section": "Penguins",
+    "text": "Penguins\nTable 1 shows the first 10 penguins from the dataset.\n\n\nCode\npenguins |&gt;\n  slice_head(n = 10) |&gt;\n  select(species, island, bill_length_mm, bill_depth_mm) |&gt;\n  gt() \n\n\n\n\n\n\nTable 1:  First 10 penguins from the dataset. \n  \n    \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n    Adelie\nTorgersen\n39.5\n17.4\n    Adelie\nTorgersen\n40.3\n18.0\n    Adelie\nTorgersen\nNA\nNA\n    Adelie\nTorgersen\n36.7\n19.3\n    Adelie\nTorgersen\n39.3\n20.6\n    Adelie\nTorgersen\n38.9\n17.8\n    Adelie\nTorgersen\n39.2\n19.6\n    Adelie\nTorgersen\n34.1\n18.1\n    Adelie\nTorgersen\n42.0\n20.2"
+  },
+  {
+    "objectID": "presentation.html#modeling-results",
+    "href": "presentation.html#modeling-results",
+    "title": "Penguins",
+    "section": "Modeling Results",
+    "text": "Modeling Results\n…"
+  },
+  {
+    "objectID": "presentation.html#references",
+    "href": "presentation.html#references",
+    "title": "Penguins",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nGorman, Kristen B., Tony D. Williams, and William R. Fraser. 2014. “Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).” Edited by André Chiaradia. PLoS ONE 9 (3): e90081. https://doi.org/10.1371/journal.pone.0090081."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This was created during the 2023 Division Upskilling of Mathematics Teachers on July 21, 2023."
+  },
+  {
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Penguins",
+    "section": "",
+    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package(Gorman, Williams, and Fraser 2014).\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(gt)\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
+  },
+  {
+    "objectID": "workshop.html#data",
+    "href": "workshop.html#data",
+    "title": "Penguins",
+    "section": "",
+    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package(Gorman, Williams, and Fraser 2014).\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(gt)\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
+  },
+  {
+    "objectID": "workshop.html#species",
+    "href": "workshop.html#species",
+    "title": "Penguins",
+    "section": "Species",
+    "text": "Species\nFigure 1 is a bar plot of species of penguins.\n\n```{r}\n#| label: fig-barplot-species\n#| fig-cap: Bar plot of species of penguins.\n#| fig-width: 5\n#| fig-asp: 0.618\n\nggplot(penguins, aes(x = species)) +\n  geom_bar()\n```\n\n\n\n\nFigure 1: Bar plot of species of penguins."
+  },
+  {
+    "objectID": "workshop.html#penguins",
+    "href": "workshop.html#penguins",
+    "title": "Penguins",
+    "section": "Penguins",
+    "text": "Penguins\nTable 1 shows the first 10 penguins from the dataset.\n\n\nCode\npenguins |&gt;\n  slice_head(n = 10) |&gt;\n  select(species, island, bill_length_mm, bill_depth_mm) |&gt;\n  gt() \n\n\n\n\n\n\nTable 1:  First 10 penguins from the dataset. \n  \n    \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n    Adelie\nTorgersen\n39.5\n17.4\n    Adelie\nTorgersen\n40.3\n18.0\n    Adelie\nTorgersen\nNA\nNA\n    Adelie\nTorgersen\n36.7\n19.3\n    Adelie\nTorgersen\n39.3\n20.6\n    Adelie\nTorgersen\n38.9\n17.8\n    Adelie\nTorgersen\n39.2\n19.6\n    Adelie\nTorgersen\n34.1\n18.1\n    Adelie\nTorgersen\n42.0\n20.2"
+  }
+]

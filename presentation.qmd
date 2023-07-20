@@ -1,0 +1,77 @@
+---
+title: "Penguins"
+author: "Orville Hombrebueno"
+format: revealjs
+editor: visual
+bibliography: references.bib
+execute:
+  echo: true
+---
+
+# Introduction
+
+## Data
+
+For this analysis we'll use the penguins dataset from the [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) package[@gorman2014].
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(gt)
+```
+
+```{r}
+#| label: glimpse-data
+glimpse(penguins)
+```
+
+## Species
+
+@fig-barplot-species is a bar plot of species of penguins.
+
+```{r}
+#| label: fig-barplot-species
+#| fig-cap: Bar plot of species of penguins.
+#| fig-width: 5
+#| fig-asp: 0.618
+#| output-location: column-fragment
+#| code-line-numbers: "|6|7-10"
+
+ggplot(
+  penguins,
+  aes(x = species)
+) +
+  geom_bar() +
+  theme_minimal() +
+  labs(
+    x = "Species",
+    y = "Count"
+  )
+```
+
+## Penguins {.smaller}
+
+@tbl-penguins shows the first 10 penguins from the dataset.
+
+```{r}
+#| label: tbl-penguins
+#| tbl-cap: First 10 penguins from the dataset.
+#| code-fold: true
+
+penguins |>
+  slice_head(n = 10) |>
+  select(species, island, bill_length_mm, bill_depth_mm) |>
+  gt() 
+
+```
+
+# Analysis
+
+## Modeling Results
+
+...
+
+## References

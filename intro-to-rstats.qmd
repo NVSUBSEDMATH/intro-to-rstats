@@ -10,7 +10,7 @@ editor: visual
 
 # What is R?
 
-![](images/R1.png){fig-align="center"}
+![](images/R1.png){fig-align="center" width="300"}
 
 ## Introduction to R
 
